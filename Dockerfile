@@ -4,7 +4,7 @@ COPY GestionERP.ZIP ${WEBDEVConfiguration}comptes/ftp_webdev/
 
 RUN set -ex \
 	&& cd ${WEBDEVBinaries} \
-	&& ${WEBDEVBinaries}WDInstalle /DOCKER/INSTALLEGO/gestionerp
+	&& ${WEBDEVBinaries}WDInstalle /DOCKER/INSTALLEGO/GestionERP
 
 # Création de la persistance
-VOLUME ${WEBDEVConfiguration}comptes/Donnees/gestionerp/
+VOLUME ${WEBDEVConfiguration}comptes/Donnees/GestionERP/
